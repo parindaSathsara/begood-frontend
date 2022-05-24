@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	background: #0f1423;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.containerMain {
+	width: 600px;
+	background: #191c2d;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7), -2px -2px 3px rgba(255, 255, 255, 0.2);
+	padding: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.containerMain h3 {
+	text-align: center;
+	font-size: 27px;
+	color: #ec3051;
+	margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.number {
+	height: 50px;
+	width: 100%;
+	outline: none;
+	background: transparent;
+	padding: 0px 20px;
+	border: 2px solid #ec3051;
+	font-size: 18px;
+	color: #ec3051;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.number::placeholder {
+	color: #ec3051;
+}
+
+.containerMain h5 {
+	margin-top: 10px !important;
+	color: #fff;
+}
+
+.containerMain .check {
+	height: 50px;
+	width: 100%;
+	border: none;
+	outline: none;
+	background: #ec3051;
+	padding: 0px 20px;
+	font-size: 20px;
+	margin-top: 10px;
+	cursor: pointer;
+	font-weight: 600;
+	color: #191e2d;
+}
+
+
+.containerTable {
+	width: 600px;
+	background: #191c2d;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7), -2px -2px 3px rgba(255, 255, 255, 0.2);
+	padding: 20px;
+	margin-top: 60px;
+}
+
+.containerTable h3{
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+
+.table-dark {
+	background: #191c2d;
 }
